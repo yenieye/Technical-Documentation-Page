@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Technical Documentation</title>
+	<link rel="stylesheet" type="text/css" href="technical.css">
+</head>
+<body>
+	<nav id="navbar">
+  		<header>CSS Text Documentation</header>
+  		<ul>
+    		<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    		<li><a class="nav-link" href="#Text_Color">Text Color</a></li>
+    		<li><a class="nav-link" href="#Text_Alignment">Text Alignment</a></li>
+    		<li><a class="nav-link" href="#Text_Decoration">Text Decoration</a></li>
+    		<li><a class="nav-link" href="#Text_Transformation">Text Transformation</a></li>
+    		<li><a class="nav-link" href="#Text_Spacing">Text Spacing</a></li>
+    		<li><a class="nav-link" href="#Text_Shadow">Text Shadow</a></li>
+    		<li><a class="nav-link" href="#Reference">Reference</a></li>
+  		</ul>
+	</nav>
+	<main id="main-doc">
+  		<section class="main-section" id="Introduction">
+    		<header>Introduction</header>
+    		<article>
+    			<p>
+    				CSS which stands for "Cascading Style Sheets" describes how HTML elements are to be displayed on the screen. It is a simple design language intended to simplify the process of making web pages presentable.
+    			</p>
+      			<p>
+      				CSS controls the layout of multiple web pages all at once using external stylesheets. It emphasizes the style of a web page. CSS gives aesthetic to your web pages.
+      			</p>
+      			<p>
+      				Selectors are used in CSS to specify HTML elements. It is written before curly bracket. The information inside the curly brackets is called a declaration. Declaration containes properties and values that are applied to the selector.
+      			</p>
+      			<p>Different properties used in CSS</p>
+      			<ul>
+        			<li>Page Layouts</li>
+        			<li>Colors</li>
+        			<li>Fonts</li>
+        			<li>Tables</li>
+        			<li>Grids</li>
+        			<li>Images</li>
+      			</ul>
+      			<p>
+      				In this technical documentation, we would be focusing with basic CSS text documentation. This includes TEXT COLOR, TEXT ALIGNMENT, TEXT DECORATION, TEXT TRANSFORMATION, TEXT SPACING and TEXT SHADOW.
+      			</p>
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Color">
+    		<header>Text color</header>
+    		<article>
+    			<p>The <em>color</em> property is used to set the color of the text</p>
+    			<ul>
+    				<li>color name such as "blue"</li>
+    				<li>HEX value such as "#000000"</li>
+    				<li>RGB value such as"rgb(255, 240, 120)"</li>
+    			</ul>
+      			Text color
+      			<code>body {
+      				color: blue;
+      				}
+
+      				h1 {
+      				color: green;
+	  				}
+      			</code>
+      			Text Color and Background Color
+      			<code>body {
+      				background-color: #045924;
+      				color: #d1820a;
+      				}
+
+      				h1 {
+      				background-color: rgb(207, 10, 10);
+      				color: rgb(0, 0, 0);
+      				}
+      			</code>
+      			<p>Try these simple codes to give color to your web page!</p>
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Alignment">
+    		<header>Text Alignment</header>
+    		<article>
+    			<p>The <em>text-align</em> property is used to set the horizontal alignment of a text</p>
+    			There are 4 ways to align a text
+    			<ul>
+    				<li>center</li>
+    				<li>left</li>
+    				<li>right</li>
+    				<li>justify</li>
+    			</ul>
+      			<code>h1 {
+      				text-align: center;
+      				}
+
+      				h2 {
+      				text-align: left;
+  					}
+
+  					h3 {
+  					text-align: right;
+					}
+
+					div {
+					text-align: justify;
+					}
+				</code>
+				<p>Use these codes to align all of your texts the way you like it to appear!</p>
+      		
+      			For vertical alignment of an element (top, middle, bottom)
+      			<code>img.top {
+      				vertical-align: top;
+      				}
+      			</code> 
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Decoration">
+    		<header>Text Decoration</header>
+    		<article>
+      			<p>The <em>text-decoration</em> property is used to set or remove decorations from text</p>
+      			<p> The value <em>text-decoration:none;</em> is used to remove underlines from links</p>
+      			Sample codes for text-decoration
+  				<code>h2 {
+  					text-decoration: line-through;
+  					}
+  				
+  					p {
+  					text-decoration: underline;
+  					}
+  				
+  					a {
+  					text-decoration: none;
+  					}
+  				</code>
+				<p>Try using these codes to decorate your texts!</p>
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Transformation">
+    		<header>Text Transformation</header>
+    		<article>
+      			<p>The <em>text-transform</em> property is used to specify uppercase and lowercase letters in a text</p>
+      			<code>h2.uppercase {
+      				text-transform: uppercase;
+  					}
+
+  					p.lowercase {
+  					text-transform: lowercase;
+					}
+
+					h6.capitalize {
+					text-transform: capitalize;
+					}
+				</code>
+      			<p>The capitalize value is used to capitalize the first letter of each word</p>
+      			<p>Try using these codes to easily transform your texts!</p> 
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Spacing">
+    		<header>Text Spacing</header>
+    		<article>
+      			<p>There are 5 text spacing property</p>
+      			<ol>
+        			<li>Text Indentation
+        				<ul>
+        					<li>The <em>text-indent</em> property is used to specify the indentation of the first line of a text</li>
+        					<code>p {
+        						text-indent: 30px;
+        						}
+        					</code>
+    					</ul>
+        			</li>
+        			<li>Letter Spacing
+        				<ul>
+        					<li>The <em>letter-spacing</em> property is used to specify the space between the character in a text</li>
+        					<code>p {
+        						letter-spacing: 1px;
+        						}
+        					</code>
+        					<code>h1 {
+        						letter-spacine: -2px;
+    							}
+    						</code>
+        				</ul>
+					</li>
+					<li>Line Height
+        				<ul>
+        					<li>The <em>line-height</em> property is used to specify the space between lines</li>
+        					<code>p.small {
+        						line-height: 1.5;
+        						}
+        					</code>
+    					</ul>
+        			</li>
+        			<li>Word Spacing
+        				<ul>
+        					<li>The <em>word-spacing</em> property is used to specify the space between the words in a text</li>
+        					<code>h1 {
+        						word-spacing: 8px;
+        						}
+        					</code>
+    					</ul>
+        			</li>
+        			<li>White Space
+        				<ul>
+        					<li>The <em>white-space</em> property specifies how white-space inside an element is handled</li>
+        					<code>h1 {
+        						white-space: nowrap;
+        						}
+        					</code>
+    					</ul>
+        			</li>
+    			</ol>
+    		</article>
+  		</section>
+  		<section class="main-section" id="Text_Shadow">
+    		<header>Text Shadow</header>
+    		<article>
+      			<p>The <em>text-shadow</em> property adds shadow to a text</p>
+      			Text shadow effect
+      			<code>h1 {
+      				text-shadow: 5px 5px;
+  					}
+  				</code>
+  				Text shadow effect using a different color
+  				<code>h1 {
+  					text-shadow: 5px 5px green;
+  					}
+				</code>
+				Text shadow effect with blur
+				<code>h1 {
+					text-shadow: 3px 3px 7px green;
+					}
+				</code>
+				<p>Try giving your texts a shadow effect using these simple text-shadow codes!</p>
+    		</article>
+  		</section>
+  		<section class="main-section" id="Reference">
+    		<header>Reference</header>
+    		<article>
+				<p>All the information provided above including all the codes are based from <a href="https://www.w3schools.com/css/css_text.asp">w3schools</a></p>
+    		</article>
+  		</section>
+      <footer>
+        <span>&copy; 2021 Yen</span>
+      </footer>
+	</main>
+</body>
+</html>
